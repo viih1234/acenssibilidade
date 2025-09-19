@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -337,10 +334,55 @@
               CONTATO
 
               <form class="secaoContato-form">
-                
+
+                <p class="secaoContato-form-legend">
+                  Oi, tudo bem? Fale com a gente!
+                  Preencha seus dados e sua mensagem:
+                </p>
+
+                <div class="contatoCampo contatoCampo--sucesso">
+                  <label>Nome:</label>
+                  <input type="text" class="contatoCampo--validouFoi" value="Vitoria cordeiro" required>
+                </div>
+
+                <div class="contatoCampo contatoCampo--erro">
+                  <label>Email:</label>
+                  <input type="email" class="contatoCampo--validouErro" required>
+                  <span class="contatoCampo-msg contatoCampo-msg--erro">
+                    Você quis dizer <a href="#">escola.pr.gov.br</a>
+                  </span>
               </form>
             </h2>
           </div>
+         <div class="contatoCampo contatoCampo--erro">
+                  <label>Telefone:</label>
+                  <input type="text" class="contatoCampo--validouErro" placeholder="4699936-8048">
+                  <span class="contatoCampo-msg contatoCampo-msg--erro"> Faltou o DDD>
+          </div>
+
+          <div class="contatoCampo">
+            <label>CEP</label>
+            <input type="text" maxlength="8" placeholder="Exemplo: 85555-000" required>
+          </div>
+
+
+            <div class="contatoCampo">
+            <label>Endereço</label>
+            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Clevelandia">
+          
+          </div>
+
+           <div class="contatoCampo">
+            <label>Bairro</label>
+            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Centro">
+            </div>
+
+             <div class="contatoCampo">
+            <label>Cidade</label>
+            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Palmas">
+            </div>
+                  </span>
+
         </section>
     </main>
   </body>
