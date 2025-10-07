@@ -1,4 +1,4 @@
-.dialogNewsletter{
+dialogNewsletter {
     display: none;
 }
 
@@ -11,7 +11,7 @@
     border-radius: 8px;
     background-color: #fff;
     border: 1px solid #8D8D8D;
-    padding: 3em 1.5em 1.5em;
+    padding: 3em 1.5em 1.5em 1.5em;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     position: fixed;
     display: inline-block;
@@ -34,15 +34,15 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .4);    
 }
 
 .overlayDialog + .dialogNewsletter {
     display: block;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);    
 }
 
-.dialogNewsletter-titulo{
+.dialogNewsletter-titulo {
     font-size: 1.8em;
     line-height: 1;
 }
@@ -69,7 +69,6 @@
     margin-bottom: 10px;
     width: 100%;
     min-width: 245px;
-
 }
 
 .dialogNewsletter-btn {
@@ -84,14 +83,13 @@
     transition: .2s ease-in;
 }
 
-.dialogNewsletter-btn:hover;
+.dialogNewsletter-btn:hover,
 .dialogNewsletter-btn:focus {
     background-color: #EB5757;
     cursor: pointer;
     background-image: url(../email-hover.png);
 }
-
-.dialogNewsletter-fechar{
+.dialogNewsletter-fechar {
     position: absolute;
     background-color: transparent;
     transform: translate(50%, 50%) scale(1.4);
@@ -102,7 +100,7 @@
     border: 0;
     border: 1px solid;
     overflow: hidden;
-    color: transparent;
+    color:transparent;
     font-size: 0;
 }
 
@@ -114,13 +112,35 @@
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 2;
     font-size: 20px;
     font-weight: bold;
 }
 
-.dialogNewsletter-fechar:hover::before,
+.dialogNewsletter-fechar:hover:before,
 .dialogNewsletter-fechar:focus:before {
     color: #ce3434;
     cursor: pointer;
+}
+
+@media (min-windt: 830px) {
+    .dialogNewsletter-body{
+        width: 533px;
+    }
+
+
+    .dialogNewsletter-form {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .dialogNewsletter-campo {
+        flex-basis: 80%;
+    }
+
+    .dialogNewsletter-btn {
+        flex-basis: 20%;
+        height: 3.1em;
+    }
 }
