@@ -21,7 +21,7 @@ li[aria-hidden='false'] { display:block ; }
   display: block;
   width: 100vw;
   height: 100vh;
-}
+} 
 
 .pularNavegacao {
   text-indent: 100%;
@@ -35,11 +35,11 @@ li[aria-hidden='false'] { display:block ; }
 }
 
 
-.clearfix:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
   clear: both;
 }
 
